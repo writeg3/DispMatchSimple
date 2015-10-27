@@ -78,6 +78,8 @@ for y in imageLoopData:
     sys.stdout.write("\r%d%%" % percent)
     sys.stdout.flush()
 
+#test code for converting to mesh. Not working.
+
 # threeDee = []    
 # image = np.array(image) 
 # for x in range(image.shape[0]):
@@ -92,11 +94,11 @@ for y in imageLoopData:
 #     ax.scatter(point[0],point[1],point[2])
 # 
 # plt.show()
-image = np.array(image)
-distance = (im0_small.shape[1]-image.shape[1]) / 2
-im0_small = im0_small[:,distance:im0_small.shape[1]-distance]
-print(image[100][100])
-im0_small[image>-5] = 0
+# image = np.array(image)
+# distance = (im0_small.shape[1]-image.shape[1]) / 2
+# im0_small = im0_small[:,distance:im0_small.shape[1]-distance]
+# print(image[100][100])
+# im0_small[image>-5] = 0
 
 print("\nDone, now plotting...")
 print('Mean depth is '+ str(np.mean(image)))
